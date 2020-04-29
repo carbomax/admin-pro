@@ -14,6 +14,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { CommonModule } from '@angular/common';
 import { PagesRoutingModule } from './pages-routing.module';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
 
@@ -25,7 +27,9 @@ import { PagesRoutingModule } from './pages-routing.module';
     Graficas1Component,
     IncrementatorComponent,
     GraficoDonaComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   exports: [
     PagesComponent,
@@ -35,8 +39,8 @@ import { PagesRoutingModule } from './pages-routing.module';
     IncrementatorComponent,
     Graficas1Component,
     GraficoDonaComponent,
-    AccountSettingsComponent
-
+    AccountSettingsComponent,
+    PromesasComponent
   ],
   imports: [
     CommonModule,
