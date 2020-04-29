@@ -8,12 +8,15 @@ import { ProgressComponent } from './progress/progress.component';
 import { PagesComponent } from './pages.component';
 import { HeaderComponent } from '../shared/header/header.component';
 import { SharedModule } from '../shared/shared.module';
-import { PagesRoutingModule } from './pages-routing.module';
 import { IncrementatorComponent } from '../components/incrementator/incrementator.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { CommonModule } from '@angular/common';
+import { PagesRoutingModule } from './pages-routing.module';
 
 @NgModule({
+
   declarations: [
     PagesComponent,
     HeaderComponent,
@@ -21,7 +24,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
     ProgressComponent,
     Graficas1Component,
     IncrementatorComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    AccountSettingsComponent
   ],
   exports: [
     PagesComponent,
@@ -30,13 +34,17 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
     ProgressComponent,
     IncrementatorComponent,
     Graficas1Component,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    AccountSettingsComponent
+
   ],
   imports: [
+    CommonModule,
     FormsModule,
     SharedModule,
-    PagesRoutingModule,
-    ChartsModule
+    ChartsModule,
+    PagesRoutingModule
+
   ]
 
 })
