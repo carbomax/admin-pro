@@ -30,6 +30,7 @@ export function provideConfig() {
     AppComponent,
     LoginComponent,
     RegisterComponent
+
   ],
   imports: [
     BrowserModule,

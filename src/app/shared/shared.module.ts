@@ -4,6 +4,7 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { PipesModule } from '../pipes/pipes.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CommonModule } from '@angular/common';
   ],
   imports:[
     CommonModule,
+    PipesModule,
     RouterModule
   ]
 })
